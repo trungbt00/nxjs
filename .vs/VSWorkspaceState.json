@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\locales",
-    "\\public\\locales\\en",
-    "\\public\\locales\\vi",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\article",
-    "\\src\\app\\article\\[id]",
-    "\\src\\app\\news\\[id]"
+    "\\src\\app\\login",
+    "\\src\\app\\logout",
+    "\\src\\app\\news",
+    "\\src\\app\\profile",
+    "\\src\\app\\register",
+    "\\src\\app\\support",
+    "\\src\\app\\unauthorized"
   ],
-  "SelectedNode": "\\src\\app\\article\\[id]\\article.tsx",
+  "SelectedNode": "\\src\\app\\layout.tsx",
   "PreviewInSolutionExplorer": false
 }

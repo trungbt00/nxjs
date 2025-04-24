@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\article.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\article\\[id]\\article.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\LoginForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\LoginForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\article\\[id]\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\Header.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\LogoutConfirmModal.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\LoginForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\LoginForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\public\\locales\\en\\translation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\locales\\en\\translation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,12 +46,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "article.tsx",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\article.tsx",
-              "RelativeDocumentMoniker": "src\\app\\article\\[id]\\article.tsx",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\article.tsx",
-              "RelativeToolTip": "src\\app\\article\\[id]\\article.tsx",
+              "DocumentIndex": 1,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\page.tsx",
+              "RelativeDocumentMoniker": "src\\app\\article\\[id]\\page.tsx",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\app\\article\\[id]\\page.tsx",
+              "RelativeToolTip": "src\\app\\article\\[id]\\page.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-04-24T01:45:53.994Z",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Header.tsx",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\Header.tsx",
               "RelativeDocumentMoniker": "src\\components\\Header.tsx",
@@ -67,12 +67,11 @@
               "RelativeToolTip": "src\\components\\Header.tsx",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-24T01:39:44.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T01:39:44.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Footer.tsx",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\Footer.tsx",
               "RelativeDocumentMoniker": "src\\components\\Footer.tsx",
@@ -80,25 +79,24 @@
               "RelativeToolTip": "src\\components\\Footer.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-24T01:39:40.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T01:39:40.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "LoginForm.tsx",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\LoginForm.tsx",
               "RelativeDocumentMoniker": "src\\components\\LoginForm.tsx",
               "ToolTip": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\LoginForm.tsx",
               "RelativeToolTip": "src\\components\\LoginForm.tsx",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAwE8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwE8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-04-24T01:33:44.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LogoutConfirmModal.tsx",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\src\\components\\LogoutConfirmModal.tsx",
               "RelativeDocumentMoniker": "src\\components\\LogoutConfirmModal.tsx",
@@ -106,12 +104,11 @@
               "RelativeToolTip": "src\\components\\LogoutConfirmModal.tsx",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwC8AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-24T01:30:11.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T01:30:11.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "translation.json",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Projects\\nextjs-clone-demo\\public\\locales\\vi\\translation.json",
               "RelativeDocumentMoniker": "public\\locales\\vi\\translation.json",
@@ -119,8 +116,7 @@
               "RelativeToolTip": "public\\locales\\vi\\translation.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-24T01:19:54.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T01:19:54.582Z"
             },
             {
               "$type": "Document",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "public\\locales\\en\\translation.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-24T01:19:14.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T01:19:14.668Z"
             }
           ]
         }
