@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\locales",
+    "\\public\\locales\\en",
+    "\\public\\locales\\vi",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\article",
+    "\\src\\app\\article\\[id]",
+    "\\src\\app\\news\\[id]"
+  ],
+  "SelectedNode": "\\src\\app\\article\\[id]\\article.tsx",
+  "PreviewInSolutionExplorer": false
+}

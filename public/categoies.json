@@ -1,0 +1,26 @@
+[
+  {
+    "id": "3ebe84fe-5c7f-1289-21a0-3a0b360f757d",
+    "name": "Tin tức",
+    "sortIndex": 0,
+    "childrens": []
+  },
+  {
+    "id": "bc0e78b8-2825-b0d7-3cca-3a0b363192d9",
+    "name": "Thông tin đấu giá",
+    "sortIndex": 1,
+    "childrens": []
+  },
+  {
+    "id": "e0caf83d-37bb-d40a-81a5-3a0b444eadf4",
+    "name": "Tin nổi bật",
+    "sortIndex": 2,
+    "childrens": []
+  },
+  {
+    "id": "baa8aa0c-e309-838c-0f87-3a18c9ddd03d",
+    "name": "Hướng dẫn",
+    "sortIndex": 3,
+    "childrens": []
+  }
+]
