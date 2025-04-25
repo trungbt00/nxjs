@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
+    "\\public\\locales",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\login",
-    "\\src\\app\\logout",
+    "\\src\\app\\article",
+    "\\src\\app\\articlefn",
     "\\src\\app\\news",
-    "\\src\\app\\profile",
-    "\\src\\app\\register",
-    "\\src\\app\\support",
-    "\\src\\app\\unauthorized"
+    "\\src\\components",
+    "\\src\\lib"
   ],
-  "SelectedNode": "\\src\\app\\layout.tsx",
   "PreviewInSolutionExplorer": false
 }

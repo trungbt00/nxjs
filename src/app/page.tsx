@@ -1,5 +1,3 @@
-// src/app/page.tsx
-
 import { getNewsList } from '../lib/api';
 import HomePage from '../components/HomePage';
 

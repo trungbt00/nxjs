@@ -10,7 +10,7 @@ export default function RegisterPage() {
 
     useEffect(() => {
         if (!permissions.includes('DangKyGiaHan')) {
-            router.replace('/unauthorized'); // Redirect đến trang báo lỗi
+            router.replace('/unauthorized');
         }
     }, [permissions]);
 
@@ -19,7 +19,6 @@ export default function RegisterPage() {
     return (
         <div>
             <h2>Trang Đăng ký gia hạn</h2>
-            {/* Nội dung ở đây */}
         </div>
     );
 }
