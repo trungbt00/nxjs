@@ -1,28 +1,37 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useSelector } from "react-redux";
+import { useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../redux/store";
 import { Container, Col, Button, Dropdown, Image } from "react-bootstrap";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslation } from "react-i18next";
+import { logout } from "../redux/authSlice";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const dispatch = useDispatch();
+  const router = useRouter();
+  const { t } = useTranslation();
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   const userEmail = useSelector((state: RootState) => state.auth.userEmail);
-  const { t } = useTranslation();
-  const router = useRouter();
 
-  const handleLogoutConfirmation = () => {
-    router.push("/logout");
+  const showLogoutDialog = () => dialogRef.current?.showModal();
+  const handleCloseDialog = () => dialogRef.current?.close();
+
+  const handleLogout = () => {
+    dispatch(logout());
+    router.push("/login");
+    dialogRef.current?.close();
   };
 
   return (
     <header className="header">
       <Container className="d-flex justify-content-between align-items-center py-2">
         <Col md={5} className="d-flex align-items-start">
-          <Link href={`/`}>
+          <Link href="/">
             <Image
               src="/logo.png"
               alt="logo"
@@ -41,13 +50,12 @@ export default function Header() {
 
         <div className="d-flex align-items-center" style={{ gap: "10px" }}>
           <LanguageSwitcher />
+
           {isLoggedIn ? (
             <Dropdown align="end">
               <Dropdown.Toggle
                 variant="light"
-                id="user-menu"
-                className="d-flex align-items-center gap-2 border-0 bg-transparent shadow-none"
-                style={{ padding: 0 }}
+                className="d-flex align-items-center gap-2 border-0 bg-transparent shadow-none p-0"
               >
                 <Image
                   src="/avatar.png"
@@ -61,13 +69,13 @@ export default function Header() {
 
               <Dropdown.Menu>
                 <Dropdown.Item href="/profile">{t("acc_info")}</Dropdown.Item>
-                <Dropdown.Item onClick={handleLogoutConfirmation}>
+                <Dropdown.Item onClick={showLogoutDialog}>
                   {t("logout")}
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           ) : (
-            <Link href={`/login`}>
+            <Link href="/login">
               <Button
                 style={{
                   backgroundColor: "#333192",
@@ -76,7 +84,6 @@ export default function Header() {
                   padding: "10px 30px",
                   color: "white",
                   borderRadius: "8px",
-                  whiteSpace: "nowrap",
                 }}
               >
                 {t("login")}
@@ -85,6 +92,69 @@ export default function Header() {
           )}
         </div>
       </Container>
+
+      {/* Logout Dialog */}
+      <dialog
+        ref={dialogRef}
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 1000,
+          border: "none",
+          borderRadius: "10px",
+          padding: "2rem",
+          width: "min(90%, 400px)",
+          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+          margin: 0,
+          background: "white",
+        }}
+        onCancel={handleCloseDialog}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.5rem",
+            textAlign: "center",
+          }}
+        >
+          <h3 style={{ margin: 0, color: "#333" }}>{t("ttlogout")}</h3>
+          <p style={{ color: "#666", margin: 0 }}>{t("cflogout")}</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              gap: "1rem",
+              marginTop: "1.5rem",
+            }}
+          >
+            <Button
+              variant="secondary"
+              onClick={handleCloseDialog}
+              style={{ width: "45%", padding: "0.5rem" }}
+            >
+              {t("cancel")}
+            </Button>
+            <Button
+              variant="danger"
+              onClick={handleLogout}
+              style={{ width: "45%", padding: "0.5rem" }}
+            >
+              {t("logout")}
+            </Button>
+          </div>
+        </div>
+      </dialog>
+
+      {/* Backdrop Style */}
+      <style jsx>{`
+        dialog::backdrop {
+          background: rgba(0, 0, 0, 0.5);
+          backdrop-filter: blur(3px);
+        }
+      `}</style>
     </header>
   );
 }
