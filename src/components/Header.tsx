@@ -93,7 +93,6 @@ export default function Header() {
         </div>
       </Container>
 
-      {/* Logout Dialog */}
       <dialog
         ref={dialogRef}
         style={{
@@ -148,7 +147,6 @@ export default function Header() {
         </div>
       </dialog>
 
-      {/* Backdrop Style */}
       <style jsx>{`
         dialog::backdrop {
           background: rgba(0, 0, 0, 0.5);
